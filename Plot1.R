@@ -17,5 +17,5 @@ df_sel$Global_active_power <- as.numeric(df_sel$Global_active_power)
 
 #plot
 hist(df_sel$Global_active_power, col='red', xlab='Global active power (kilowatts)', xlim = range(0,6), main='Global active power')
-png(filename='Plot1.png', width=480, height=480)
+dev.copy(png,filename='Plot1.png', width=480, height=480)
 dev.off()
